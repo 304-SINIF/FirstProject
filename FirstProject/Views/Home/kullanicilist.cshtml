@@ -1,0 +1,34 @@
+﻿
+@model List<User>
+@{
+    ViewData["Title"] = "kullanicilist";
+}
+
+<h1>kullanicilist</h1>
+<hr />
+<table class="table table-responsive">
+    <thead>
+        <tr>
+            <th>Kimlik</th>
+            <th>Takmaad</th>
+            <th>Şifre</th>
+            <th>İsim</th>
+            <th>Soyisim</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>@item.Id</th>
+                <th>@item.Username</th>
+                <th>@item.Password</th>
+                <th>@item.Name</th>
+                <th>@item.Surname</th>
+
+            </tr>
+        }
+    </tbody>
+
+</table>
+

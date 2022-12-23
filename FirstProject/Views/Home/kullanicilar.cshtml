@@ -1,0 +1,27 @@
+﻿@model FirstProject.Models.User
+@{
+    ViewData["Title"] = "kullanicilar";
+}
+
+<h1>kullanicilar</h1>
+<hr />
+<table class="table table-responsive ">
+    <tr>
+        <th>Ad:</th>
+        <td>@Model.Name</td>
+    </tr>
+      <tr>
+        <th>Soyad:</th>
+        <td>@Model.Surname</td>
+    </tr>
+      <tr>
+        <th>Id:</th>
+        <td>@Model.Id</td>
+    </tr>
+      <tr>
+        <th>Şifre</th>
+        <td>@Model.Password</td>
+    </tr>
+</table>
+@Html.Partial("_Partial")
+
